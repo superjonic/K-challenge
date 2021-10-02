@@ -61,3 +61,10 @@ h4{
 .pinkText{
     color: #D43571;
 }
+
+@media (max-width: 500px) {
+    .tabbox{
+        width: 70%;
+        height: 7vh;
+    }
+}

@@ -1,17 +1,31 @@
 import { 
     GET_PHYSICAL,
-    GET_SOCIAL 
+    GET_SOCIAL,
+    GET_MILESTONES_PHYSICAL,
+    GET_MILESTONES_SOCIAL 
     } from "../actions";
   
   
   const initialState = {
-    color: ""
+    color: "",
+    milestones: []
 };
   
   function rootReducer (state = initialState, action) {     
       switch(action.type) {
         // Aca va tu codigo;  
-       
+        case GET_MILESTONES_PHYSICAL:
+          return {
+            ...state,
+            milestones: action.payload
+          }
+        case GET_MILESTONES_SOCIAL:
+          return {
+            ...state,
+            milestones: action.payload
+          }
+    
+
         case GET_PHYSICAL:
           return {
             ...state,

@@ -51,4 +51,12 @@ h2{
 .paragraph p{
     font-size: 0.85rem;
     margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .paragraph p{
+        font-size: 0.65rem;
+       
+    }
 }
