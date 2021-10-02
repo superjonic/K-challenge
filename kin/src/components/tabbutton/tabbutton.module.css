@@ -1,0 +1,28 @@
+.tabbox{
+    width: 60vh;
+    height: 8vh;
+}
+
+.btnLeft{
+    width: 50%;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.btnRight{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+h4{
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}

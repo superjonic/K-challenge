@@ -1,0 +1,16 @@
+.btn {
+    background-color: #75B753;
+    color: white;
+    width: 50vh;
+    height: 5vh;
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    bottom: 0;
+    cursor: pointer;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder;
+}
+.btn:hover {
+    background-color: #45971c;
+}
