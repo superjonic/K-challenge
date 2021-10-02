@@ -6,6 +6,8 @@ import styles from './header.module.css';
 
 export default function Header(){
     const color = useSelector((state) => state.color)
+    const milestones = useSelector((state) => state.milestones)
+    console.log(milestones.data)
 
     return (
         <div className ={color === "pink" ? styles.headerPink : styles.headerBlue }>
@@ -15,9 +17,9 @@ export default function Header(){
                 <TabButton />
                 <div className={styles.divider}> </div>
 
-                <h2>Skill: Standing</h2>
+                <h2>Skill: {milestones.data?.skill?.title}</h2>
                 <div className= {styles.paragraph}>
-                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati voluptatem sed quasi dolor dicta quia dolorem facilis, itaque dolorum illo commodi esse magnam debitis vitae architecto aspernatur rem beatae.</p>
+                     <p>{milestones.data?.skill?.description}</p>
                 </div>
                 
             </div>

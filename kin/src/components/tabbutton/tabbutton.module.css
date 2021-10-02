@@ -1,5 +1,5 @@
 .tabbox{
-    width: 58vh;
+    width: 59vh;
     height: 8vh;
 }
 
@@ -66,5 +66,8 @@ h4{
     .tabbox{
         width: 70%;
         height: 7vh;
+    }
+    h4 {
+        font-size: 0.7rem;
     }
 }

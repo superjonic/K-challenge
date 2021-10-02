@@ -9,7 +9,9 @@ import styles from './home.module.css';
 
 
 export default function Home(){
+
  const dispatch = useDispatch()
+
     useEffect(() => {
         dispatch(getMilestonesPhysical())
     }, [])
