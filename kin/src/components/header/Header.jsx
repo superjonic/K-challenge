@@ -1,10 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import TabButton from "../tabbutton/TabButton";
 import styles from './header.module.css';
 
+
 export default function Header(){
+    const color = useSelector((state) => state.color)
+
     return (
-        <div className ={styles.headerBlue}>
+        <div className ={color === "pink" ? styles.headerPink : styles.headerBlue }>
 
             <div className={styles.contUp}>
                 <h2>Areas</h2>

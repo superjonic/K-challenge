@@ -1,5 +1,5 @@
 .tabbox{
-    width: 60vh;
+    width: 58vh;
     height: 8vh;
 }
 
@@ -11,7 +11,24 @@
     cursor: pointer;
     background-color: transparent;
     border: 1px solid white;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
 }
+
+.btnLeftClicked {
+    width: 50%;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    color: #1FADDF;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
 .btnRight{
     width: 50%;
     height: 100%;
@@ -20,9 +37,27 @@
     cursor: pointer;
     background-color: transparent;
     border: 1px solid white;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.btnRightClicked {
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: white;
+    color: #D43571;
 }
 
 h4{
-    color: white;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.blueText{
+    color: #1FADDF;
+}
+.pinkText{
+    color: #D43571;
 }

@@ -6,13 +6,16 @@
     height: 40%;
     display: flex;
     justify-content: center;
-    
     padding-bottom: 2%;
 }
 .headerPink {
     background-color: #D43571;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    height: 35vh;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%; 
+
 }
 .headerBlue p {
     color:white;
@@ -22,6 +25,7 @@
 .headerPink p {
     color:white;
     width: 70%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .contUp {
     display: flex;
