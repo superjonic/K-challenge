@@ -1,7 +1,7 @@
 .btn {
     background-color: #75B753;
     color: white;
-    width: 40%;
+    width: 25%;
     height: 5vh;
     border: none;
     border-radius: 15px;
@@ -13,4 +13,10 @@
 }
 .btn:hover {
     background-color: #45971c;
+}
+
+@media (max-width: 700px) {
+    .btn{
+        width: 50%;
+    }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './milestone.module.css';
 
-export default function Milestone({title}){
+export default function Milestone({title, ageRange}){
     const [status, setStatus] = useState("initial")
     const [completed, setCompleted] = useState(false)
 
@@ -17,7 +17,11 @@ export default function Milestone({title}){
 
     return (
         <div className={styles.container}>
+            <div  className={styles.containerTitle}>
             <p>{title}</p>
+            <p className={styles.ageRange}>Usually achieved by {ageRange} months</p>
+            </div>
+
             { status === "initial" && 
                 <button  className={styles.btnNot} onClick={handleNotAnswered}>
                     <h4> Not answered </h4>

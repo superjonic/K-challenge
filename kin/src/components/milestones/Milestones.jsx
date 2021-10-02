@@ -15,7 +15,7 @@ export default function Milestones(){
             {
                 data?.skill?.milestones.map((milestone) => {
                     return (
-                        <Milestone key={milestone.id} title={milestone.title} />
+                        <Milestone key={milestone.id} title={milestone.title} ageRange ={data.skill.age_range} />
                     )
                 }).slice(0, 4)
             }

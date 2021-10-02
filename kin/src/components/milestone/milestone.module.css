@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+    width: 85%;
     height: 13vh;
     margin: auto;
     display: flex;
@@ -7,8 +7,21 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .container p {
-    width: 50%;
+    width: 70%;
 }
+
+.containerTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ageRange{
+    font-size: 0.7rem;
+    color: #45971c;
+}
+
+
 
 .btnCompleted{
     width: 20vh;
@@ -61,8 +74,19 @@
         font-size: 0.7rem;
     }
     .btnNot{
-        width: 17vh;
+        width: 18vh;
         font-size: 0.7rem;
     }
    
+}
+@media(max-width: 450px){
+    .container p{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .ageRange{
+        display: none;
+    }
 }
