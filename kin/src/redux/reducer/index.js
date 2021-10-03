@@ -21,16 +21,21 @@ import {
       switch(action.type) {
      
         case ADD_MILESTONES: 
-        return {
-          ...state,
-          milestoneStatus: [...state.milestoneStatus, action.payload]
-        }
+        let index = state.milestoneStatus.findIndex(m => m.id === action.payload.id)
+        
+        if(index === -1) {
+          return {
+            ...state,
+            milestoneStatus: [...state.milestoneStatus, action.payload]
+            }
+         }
+          return state 
 
         case UPDATE_MILESTONES: 
-          const index = state.milestoneStatus.findIndex(m => m.id === action.payload.id)
+          const ind = state.milestoneStatus.findIndex(m => m.id === action.payload.id)
           const newArray = [...state.milestoneStatus]
 
-          newArray[index].status = action.payload.status
+          newArray[ind].status = action.payload.status
 
           return {
             ...state,
