@@ -4,7 +4,7 @@ import {
     GET_MILESTONES_PHYSICAL,
     GET_MILESTONES_SOCIAL,
     ADD_MILESTONES,
-    UPDATE_MILESTONES 
+    UPDATE_MILESTONES,
     } from "../actions";
   
   
@@ -13,13 +13,14 @@ import {
     info: [], //API data
 //  physicalStatus: [{title: '', status: '' }, { title: '', status: '' }, {title: '', status: ''}]
 //  socialStatus: [{title: '', status: '' }, { title: '', status: '' }, {title: '', status: ''}]
-    milestoneStatus: []
-
+    milestoneStatus: [],
+    
 };
   
   function rootReducer (state = initialState, action) {     
       switch(action.type) {
      
+
         case ADD_MILESTONES: 
         let index = state.milestoneStatus.findIndex(m => m.id === action.payload.id)
         

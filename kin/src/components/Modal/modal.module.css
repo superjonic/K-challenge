@@ -1,0 +1,28 @@
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #75B753;
+    color: white;
+    width: 25%;
+    height: 5vh;
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    cursor: pointer;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder;
+}
+.btn:hover {
+    background-color: #45971c;
+}
+h3{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+@media (max-width: 700px) {
+    .btn{
+        width: 50%;
+    }
+}

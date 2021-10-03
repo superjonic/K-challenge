@@ -1,10 +1,12 @@
 import React from "react";
+import Modal from "../Modal/Modal";
 import { useSelector, useDispatch } from "react-redux";
-import { getMilestonesSocial, getSocial } from "../../redux/actions";
+import { getMilestonesSocial, getSocial} from "../../redux/actions";
 import styles from './button.module.css';
 
 
 export default function Button(){
+   
     const area = useSelector((state) => state.info)
     const dispatch = useDispatch()
 
@@ -13,21 +15,26 @@ export default function Button(){
         dispatch(getSocial("pink"))
     }
 
+    // const handleFinish = () => {
+        
+    // }
+
     return (
         <>
+       
         {
             area.data?.skill?.id === 2 ? 
-            <button className={styles.btn}>
-                Finish Assessment
-            </button>
+
+                <Modal />
+
             :
-            <button className={styles.btn} onClick={handlePink}>
-                Next
-            </button>
+                <button className={styles.btn} onClick={handlePink}>
+                    Next
+                </button>
 
         }
         
-     
+      
 
         </>
     )
