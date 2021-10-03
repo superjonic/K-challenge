@@ -10,10 +10,12 @@ import {
   
   const initialState = {
     color: "",
-    info: [], //API data
-//  physicalStatus: [{title: '', status: '' }, { title: '', status: '' }, {title: '', status: ''}]
-//  socialStatus: [{title: '', status: '' }, { title: '', status: '' }, {title: '', status: ''}]
+    info: {
+      data: [],
+      loading: false
+    }, //API data
     milestoneStatus: [],
+    
     
 };
   

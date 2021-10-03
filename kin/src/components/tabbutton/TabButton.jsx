@@ -8,22 +8,17 @@ import styles from './tabbutton.module.css';
 export default function TabButton(){
     const dispatch = useDispatch()
     const color = useSelector((state) => state.color)
-    console.log(color)
-
-    const [toggle, setToggle] = useState()
-    
+       
 
     const handlePink = () => {
         dispatch(getMilestonesSocial())
         dispatch(getSocial("pink"))
-        setToggle("pink")
        
     }
 
     const handleBlue = () => {
         dispatch(getMilestonesPhysical())
         dispatch(getSocial("blue"))
-        setToggle("blue")
         
     }
 

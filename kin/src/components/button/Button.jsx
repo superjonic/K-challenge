@@ -23,7 +23,7 @@ export default function Button(){
         <>
        
         {
-            area.data?.skill?.id === 2 ? 
+            area.data?.data?.skill?.id === 2 ? 
 
                 <Modal />
 

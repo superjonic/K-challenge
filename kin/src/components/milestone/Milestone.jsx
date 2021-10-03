@@ -4,11 +4,12 @@ import { addMilestones, updateMilestones } from "../../redux/actions";
 import styles from './milestone.module.css';
 
 export default function Milestone({title, ageRange, id}){
-    const milestoneRedux = useSelector((state) => state.milestoneStatus.filter(m => m.id === id))
-    console.log(milestoneRedux, "viene de redux")
-    const statusRedux = milestoneRedux[0]?.status
-    console.log(statusRedux, "status de redux")
 
+    const dispatch = useDispatch()
+    const milestoneRedux = useSelector((state) => state.milestoneStatus.filter(m => m.id === id))
+    
+    const statusRedux = milestoneRedux[0]?.status
+    
 
     const [status, setStatus] = useState("not answered")
     
@@ -19,7 +20,6 @@ export default function Milestone({title, ageRange, id}){
     })
     
 
-    const dispatch = useDispatch()
 
     const handleNotAnswered = () => {
         setStatus("uncompleted")

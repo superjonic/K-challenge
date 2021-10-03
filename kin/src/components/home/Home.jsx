@@ -7,7 +7,6 @@ import { getMilestonesPhysical } from '../../redux/actions';
 import styles from './home.module.css';
 
 
-
 export default function Home(){
 
  const dispatch = useDispatch()
@@ -20,13 +19,9 @@ export default function Home(){
         <div className={styles.home}>
             
             <Header />
-           
             <Milestones />
-             <Button />
+            <Button />
            
-           
-           
-            
         </div>
     )
 }
