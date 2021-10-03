@@ -6,7 +6,7 @@ import styles from './header.module.css';
 
 export default function Header(){
     const color = useSelector((state) => state.color)
-    const milestones = useSelector((state) => state.milestones)
+    const milestones = useSelector((state) => state.info)
     console.log(milestones.data)
 
     return (

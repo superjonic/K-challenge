@@ -5,7 +5,7 @@ import styles from './button.module.css';
 
 
 export default function Button(){
-    const area = useSelector((state) => state.milestones)
+    const area = useSelector((state) => state.info)
     const dispatch = useDispatch()
 
     const handlePink = () => {

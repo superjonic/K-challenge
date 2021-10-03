@@ -1,38 +1,61 @@
 import { 
-    GET_PHYSICAL,
-    GET_SOCIAL,
+    GET_BLUE,
+    GET_PINK,
     GET_MILESTONES_PHYSICAL,
-    GET_MILESTONES_SOCIAL 
+    GET_MILESTONES_SOCIAL,
+    ADD_MILESTONES,
+    UPDATE_MILESTONES 
     } from "../actions";
   
   
   const initialState = {
     color: "",
-    milestones: []
+    info: [], //API data
+//  physicalStatus: [{title: '', status: '' }, { title: '', status: '' }, {title: '', status: ''}]
+//  socialStatus: [{title: '', status: '' }, { title: '', status: '' }, {title: '', status: ''}]
+    milestoneStatus: []
+
 };
   
   function rootReducer (state = initialState, action) {     
       switch(action.type) {
-        // Aca va tu codigo;  
+     
+        case ADD_MILESTONES: 
+        return {
+          ...state,
+          milestoneStatus: [...state.milestoneStatus, action.payload]
+        }
+
+        case UPDATE_MILESTONES: 
+          const index = state.milestoneStatus.findIndex(m => m.id === action.payload.id)
+          const newArray = [...state.milestoneStatus]
+
+          newArray[index].status = action.payload.status
+
+          return {
+            ...state,
+            milestoneStatus: newArray
+          }
+
         case GET_MILESTONES_PHYSICAL:
           return {
             ...state,
-            milestones: action.payload
+            info: action.payload
           }
         case GET_MILESTONES_SOCIAL:
           return {
             ...state,
-            milestones: action.payload
+            info: action.payload
           }
     
 
-        case GET_PHYSICAL:
+        case GET_BLUE:
           return {
             ...state,
             color : action.payload
           }
   
-        case GET_SOCIAL:
+        case GET_PINK:
             return {
               ...state,
               color : action.payload

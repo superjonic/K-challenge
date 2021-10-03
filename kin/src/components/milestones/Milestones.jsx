@@ -6,7 +6,7 @@ import styles from './milestones.module.css';
 
 
 export default function Milestones(){
-    const info = useSelector((state) => state.milestones)
+    const info = useSelector((state) => state.info)
     const { data } = info
     
 
@@ -15,7 +15,7 @@ export default function Milestones(){
             {
                 data?.skill?.milestones.map((milestone) => {
                     return (
-                        <Milestone key={milestone.id} title={milestone.title} ageRange ={data.skill.age_range} />
+                        <Milestone key={milestone.id} title={milestone.title} ageRange ={data.skill.age_range} id={milestone.id} />
                     )
                 }).slice(0, 4)
             }
