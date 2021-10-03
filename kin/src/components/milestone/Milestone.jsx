@@ -57,7 +57,7 @@ export default function Milestone({title, ageRange, id}){
     return (
         <div className={styles.container}>
             <div  className={styles.containerTitle}>
-            <p>{title}</p>
+            <h4 className={styles.title}>{title}</h4>
             <p className={styles.ageRange}>Usually achieved by {ageRange} months</p>
             </div>
 
