@@ -30,7 +30,7 @@ export default function ModalPopUp() {
     <div>
     
         <div className={styles.cont}>   
-          <button className={styles.btn} onClick={handleOpen}>Finish Assesment</button>
+          <button className={styles.btn} onClick={handleOpen}>Finish Assessment</button>
         </div> 
       <Modal
         open={open}
