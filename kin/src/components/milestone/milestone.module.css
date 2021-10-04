@@ -27,7 +27,7 @@
 
 
 .btnCompleted{
-    width: 20vh;
+    width: 23vh;
     height: 5vh;
     border-radius: 15px;
     background-color: #75B753;
@@ -69,7 +69,7 @@
         font-size: 0.8rem;
     }
     .btnCompleted{
-        width: 16vh;
+        width: 19vh;
         font-size: 0.7rem;
     }
     .btnUncompleted{

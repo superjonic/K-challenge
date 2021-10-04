@@ -15,7 +15,7 @@ export default function Milestones(){
     return (
         <div className={styles.container}>
             {loading && (
-                <Box style={{display:'flex', justifyContent:'center', height:'50vh', alignItems:'center'}}>
+                <Box style={{display:'flex', justifyContent:'center', height:'58.7vh', alignItems:'center'}}>
                 <CircularProgress />
                 </Box>
             )}

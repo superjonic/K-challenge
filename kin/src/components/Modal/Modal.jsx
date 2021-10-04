@@ -40,7 +40,7 @@ export default function ModalPopUp() {
       >
         <Box sx={style}>
           <h3>
-            Congratulations for your baby advance!
+            Congratulations for your baby progress!
           </h3>
           
         </Box>
